@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build a small academic website. Uses only the Python standard library."""
 import argparse
+import hashlib
 import html
 import json
 from pathlib import Path
@@ -10,6 +11,7 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "docs"
 DATA = json.loads((ROOT / "content.json").read_text())
+STYLE_VERSION = hashlib.sha256((ROOT / "assets" / "style.css").read_bytes()).hexdigest()[:12]
 parser = argparse.ArgumentParser()
 parser.add_argument("--base-url", default="", help="Public HTTPS address. Omit for an unindexed preview.")
 args = parser.parse_args()
@@ -49,7 +51,7 @@ def page(title, content, path, research=False):
 <meta property="og:title" content="{e(title)}"><meta property="og:description" content="{e(description)}">
 <meta property="og:type" content="website"><meta name="theme-color" content="#163b3c">
 <link rel="icon" href="{prefix}assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="{prefix}assets/style.css">
+<link rel="stylesheet" href="{prefix}assets/style.css?v={STYLE_VERSION}">
 <script type="application/ld+json">{json.dumps(structured, ensure_ascii=False).replace('<', chr(92)+'u003c')}</script>
 </head>
 <body>
