@@ -7,4 +7,5 @@
 - Check the homepage, research page, abstracts, and internal links after a change.
 - Publish only this repository. Never include sibling backups or domain-account records.
 - Keep the public GitHub Pages URL stable.
+- Keep the Google verification file in `static/` so Search Console stays verified.
 - No paid services or custom-domain renewals are authorized.

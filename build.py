@@ -18,6 +18,8 @@ if BASE and (urlparse(BASE).scheme != "https" or not urlparse(BASE).hostname):
     parser.error("Use the final HTTPS website address.")
 OUT.mkdir(exist_ok=True)
 shutil.copytree(ROOT / "assets", OUT / "assets", dirs_exist_ok=True)
+if (ROOT / "static").exists():
+    shutil.copytree(ROOT / "static", OUT, dirs_exist_ok=True)
 e = html.escape
 
 def link(url, text, extra=""):
