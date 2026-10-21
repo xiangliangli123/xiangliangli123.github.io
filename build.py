@@ -62,7 +62,7 @@ def page(title, content, path, research=False):
 
 portrait = '<figure class="portrait"><img src="./assets/portrait.jpg" alt="Xiangliang Li" width="600" height="750"><figcaption>School of Finance<br>Nankai University</figcaption></figure>' if (ROOT/'assets'/'portrait.jpg').exists() else '<aside class="profile-note"><span class="chinese-name" lang="zh">李相梁</span><p>School of Finance<br>Nankai University</p><p>PhD in Economics<br>Yale University, 2021</p></aside>'
 interests = ''.join(f'<li>{e(x)}</li>' for x in DATA['interests'])
-home = f'''<section class="intro"><div class="intro-copy"><p class="eyebrow">ECONOMICS · NANKAI UNIVERSITY</p><h1>Xiangliang Li</h1><p class="position">Assistant Professor</p><p class="bio">{e(DATA['bio'])}</p><div class="intro-links">{link(DATA['cv_url'], 'Curriculum vitae', 'class="primary-link"')}<a href="mailto:{e(DATA['email'])}">Email me <span aria-hidden="true">↗</span></a></div></div>{portrait}</section>
+home = f'''<section class="intro"><div class="intro-copy"><h1>Xiangliang Li</h1><p class="bio">{e(DATA['bio'])}</p><div class="intro-links">{link(DATA['cv_url'], 'Curriculum vitae', 'class="primary-link"')}<a href="mailto:{e(DATA['email'])}">{e(DATA['email'])}</a></div></div>{portrait}</section>
 <section class="focus"><h2>Research interests</h2><ul>{interests}</ul></section>
 <section class="selected"><div class="section-heading"><h2>Selected research</h2><a href="./research/">All research <span aria-hidden="true">→</span></a></div>{''.join(paper(p,False) for p in DATA['papers'][:3])}</section>'''
 (OUT/'index.html').write_text(page('Xiangliang Li | Economics, Nankai University',home,'/'))
