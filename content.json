@@ -1,0 +1,68 @@
+{
+  "name": "Xiangliang Li",
+  "name_zh": "李相梁",
+  "role": "Assistant Professor",
+  "institution": "School of Finance, Nankai University",
+  "bio": "I am an Assistant Professor at the School of Finance, Nankai University. I obtained my PhD in economics from Yale University in 2021. My research interests are in game theory (cooperative and non-cooperative) and international trade.",
+  "email": "xiangliang.li@nankai.edu.cn",
+  "cv_url": "https://www.dropbox.com/scl/fi/ubc4xd8nr8n3geh8gxwsm/cv.pdf?rlkey=dvymok926smuyikocnq3urpk0&dl=0",
+  "interests": [
+    "Game theory",
+    "Cooperative and non-cooperative games",
+    "International trade"
+  ],
+  "papers": [
+    {
+      "section": "Working paper",
+      "title": "The Cooperation Problem",
+      "url": "https://www.dropbox.com/scl/fi/rqp66v7bkl5a4fiv05mss/cooperationProblemWebsite.pdf?rlkey=bnyqp6f9lswpty2rncblzdl6n&dl=0",
+      "abstract": "Indeterminacy is pervasive in economic theory: models often admit multiple outcomes (e.g., multiple equilibria) even when real players select one. We formulate the cooperation problem, a pure model in which players themselves resolve indeterminacy through communication. We compare two hypothetical solutions to this problem, the consensus solution and the compromise solution, in an axiomatic framework, and identify the Axiom of Compromise, a refinement of the Pareto principle requiring efficiency for any subset of players once the others have reached their best. Using this model as a building block, we develop the comprehensive-form game, which extends the extensive-form game by allowing decision nodes to represent joint decisions as well as individual ones. This framework unifies Nash's seminal works on bargaining and non-cooperative games, together with applications that combine them, including Nash (1953)."
+    },
+    {
+      "section": "Publications",
+      "title": "On the Equilibrium Properties of Spatial Models",
+      "url": "https://drive.google.com/file/d/1M50xgYxoY0BzwEMqe9Tj0gcbrPdRkauJ/view?usp=sharing",
+      "authors": [
+        {
+          "name": "Treb Allen",
+          "url": "https://sites.google.com/site/treballen/"
+        },
+        {
+          "name": "Costas Arkolakis",
+          "url": "https://arkolakis.com/"
+        }
+      ],
+      "venue": "American Economic Review: Insights",
+      "year": 2024,
+      "abstract": "We consider a broad class of spatial models where there are many types of interactions across a large number of locations. We provide a new theorem that offers an iterative algorithm for calculating an equilibrium and sufficient and “globally necessary” conditions under which the equilibrium is unique. We show how this theorem enables the characterization of equilibrium properties for two important spatial systems: an urban model with spillovers across a large number of different types of agents and a dynamic migration model with forward looking agents. An Online Appendix provides eleven additional examples of both spatial and non-spatial economic frameworks for which our theorem provides new equilibrium characterizations."
+    },
+    {
+      "section": "Publications",
+      "title": "Bargaining: Nash, Consensus, or Compromise?",
+      "url": "https://drive.google.com/file/d/15a9Zqtpr6maQ8fs-WfPBUq79wTtzP9Kb/view?usp=drive_link",
+      "venue": "Games and Economic Behavior",
+      "year": 2023,
+      "abstract": "Two solutions are proposed to Nash (1950)'s bargaining problem: the Consensus and Compromise solutions. They present a gradual divergence away from the Nash solution. In terms of axioms, the Nash solution's Axiom IIA (Independence of Irrelevant Alternatives) is decomposed into several parts, the controversial ones of which are identified and gradually replaced giving rise to the Consensus and Compromise solutions. The two replacement parts are: 1). if the additional room for cooperation induced by the worsening no-cooperation are, for both players, no better than the solution, the solution shall not change; 2). a solution shall not be the best only for one player i.e. each player should make at least some concession, no matter how small."
+    },
+    {
+      "section": "Work in progress",
+      "title": "Optimal City Structure",
+      "url": "https://drive.google.com/file/d/1tLPEBq-5Reyu6Jz42wQM6U6UDNY0UGAc/view?usp=sharing",
+      "authors": [
+        {
+          "name": "Treb Allen",
+          "url": "https://sites.google.com/site/treballen/"
+        },
+        {
+          "name": "Costas Arkolakis",
+          "url": "https://arkolakis.com/"
+        }
+      ],
+      "abstract": "In this paper, we develop a quantitative general equilibrium model of a city that incorporates the many economic interactions that occur over the space of the city, including commuting, trade, and personal interactions. We show that, despite the many spatial linkages, in the absence of externalities the competitive equilibrium is efficient; conversely, in the presence of spillovers, there exists opportunities for a city planner to increase the welfare of the city inhabitants by restricting the use of land (“zoning”). We provide sufficient conditions for the optimal zoning policy that depend solely on observables and several key model parameters. Finally, we illustrate the flexibility of the model by applying it to study the observed zoning policy of the city of Chicago. Preliminary results suggest that the welfare if residents of Chicago would increase if more area in the central business was allocated to residents district and more area in the outlying neighborhoods was allocated to businesses."
+    },
+    {
+      "section": "Work in progress",
+      "title": "Toward a Complete Understanding of Optimal Multi-Item Auction"
+    }
+  ]
+}
